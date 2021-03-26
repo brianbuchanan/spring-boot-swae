@@ -1,0 +1,17 @@
+**/target/*
+.classpath
+.project
+.vscode/
+.settings/
+*.war
+*.swp
+*.versionsBackup
+*~
+/.metadata/
+
+**/node_modules/
+*/**/.gitignore
+
+#IntelliJ
+**/*.iml
+/.idea

@@ -1,0 +1,22 @@
+---
+server:
+ port: 9999
+ servlet.context-path: /swae
+
+management.endpoints.web.cors.allowed:origins: "*"
+management.endpoint.health.show-details: always
+springdoc.swagger-ui.disable-swagger-default-url: true
+
+spring:
+ datasource:
+  initialization-mode: always
+  platform: postgres
+  url: "jdbc:postgresql://localhost:5433/edu"
+  username: postgres
+  password: postgres
+ jpa:
+  generate-ddl: false
+  hibernate.ddl-auto: none
+  open-in-view: true
+  properties.hibernate.jdbc.lob.non_contextual_creation: true
+
