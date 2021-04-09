@@ -15,9 +15,9 @@ public class StockService {
 
 	public List<Stock> getAllStocks() {
 		Iterable<Stock> unitIterable = stockRepository.findAll();
-		List<Stock> units = new ArrayList<>();
-		unitIterable.forEach(units::add);
-		return units;
+		List<Stock> stocks = new ArrayList<>();
+		unitIterable.forEach(stocks::add);
+		return stocks;
 	}
 
 	public Stock findStockBySymbol(String symbol) {
